@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import SubmitButton from '~components/SubmitButton/SubmitButton';
 import Testinho from '~components/Testinho/Testinho';
 
 import scss from './App.module.scss';
@@ -19,6 +20,7 @@ function App(role: ITest) {
     <div className={scss.teste} id="asdasdas" onClick={() => ali('oi')}>
       <p>Hello World! SIM?</p> {role.sim} {sim}
       <Testinho />
+      <SubmitButton />
     </div>
   );
 }
