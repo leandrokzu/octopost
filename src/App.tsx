@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import InputImage from '~components/InputImage/InputImage';
 import Testinho from '~components/Testinho/Testinho';
 
 import scss from './App.module.scss';
@@ -18,9 +19,14 @@ function App(role: ITest) {
   };
 
   return (
-    <div className={scss.teste} id="asdasdas" onClick={() => ali('oi')}>
-      <p>Hello World! SIM?</p> {role.sim} {sim}
-      <Testinho />
+    <div>
+      <div className={scss.teste} id="asdasdas" onClick={() => ali('oi')}>
+        <p>Hello World! SIM?</p> {role.sim} {sim}
+        <Testinho />
+      </div>
+      <div>
+        <InputImage />
+      </div>
     </div>
   );
 }
